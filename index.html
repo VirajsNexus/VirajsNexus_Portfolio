@@ -156,45 +156,11 @@
 
 </style>
 	
-	  <script>
-  // Get the modal element
- //javascript to display Pop Up image
-  var modal = document.getElementById("diwaliModal");
-
-  // Get the close button
-  var closeBtn = document.getElementsByClassName("close-button")[0];
-
-  // Show the modal when the page loads
-  window.onload = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on the (X), close the modal
-  closeBtn.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // Also close the modal if the user clicks anywhere outside of the content box
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-</script>
+	  
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-	  <!-- POP UP IMAGE DISPLAY  -->
-	 <div id="diwaliModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <img src="images/dhanteras-dev.png" alt="Happy Dhanteras Greeting" style="width:100%; border-radius: 8px;">
-    <h2>Wishing you a Happy Dhanteras! 💻✨</h2>
-  </div>
-</div>
-	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -655,6 +621,42 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+	  <div id="diwaliModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="images/dhanteras-dev.png" alt="Happy Dhanteras Greeting" style="width:100%; border-radius: 8px;">
+        <h2>Wishing you a Happy Dhanteras! 💻✨</h2>
+      </div>
+    </div>
+
+
+    <script>
+      <script>
+  // Get the modal element
+ //javascript to display Pop Up image
+  var modal = document.getElementById("diwaliModal");
+
+  // Get the close button
+  var closeBtn = document.getElementsByClassName("close-button")[0];
+
+  // Show the modal when the page loads
+  window.onload = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on the (X), close the modal
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Also close the modal if the user clicks anywhere outside of the content box
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+    </script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
