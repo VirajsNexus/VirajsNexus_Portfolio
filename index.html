@@ -155,6 +155,32 @@
 
 
 </style>
+	 
+	  /* javascript to display Pop Up image*/
+	  <script>
+  // Get the modal element
+  var modal = document.getElementById("diwaliModal");
+
+  // Get the close button
+  var closeBtn = document.getElementsByClassName("close-button")[0];
+
+  // Show the modal when the page loads
+  window.onload = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on the (X), close the modal
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Also close the modal if the user clicks anywhere outside of the content box
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 
   </head>
